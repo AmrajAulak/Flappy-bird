@@ -5,10 +5,35 @@
     left: 200px;
     top: 100px; 
     background-color: lightskyblue;  
-    border-style: solid;
+    border: 1px solid black;
 
     overflow: hidden; 
     z-index: 1; 
+
+}
+
+#grass{
+    position: absolute;
+    width: 500px;
+    height: 5px;
+    top: 375px;
+    left: 0px;
+    background-color: greenyellow;
+
+    z-index: 2;
+
+}
+
+
+#ground{
+    position: absolute;
+    width: 500px;
+    height: 20px;
+    top: 380px;
+    left: 0px;
+    background-color: burlywood;
+
+    z-index: 2;
 
 }
 
@@ -19,9 +44,11 @@
     top: 0px;
     left: 450px;
     background-color: green;
-    border: 2px solid black;
+    background-image: linear-gradient(to right, green , rgba(24, 218, 24, 0.557));
 
-    z-index: 2;
+    /* border-left: 2px solid black; */
+    /* border-right: 2px solid black; */
+    z-index: 3;
 
     animation-name: move_pipe;
     animation-duration: 3s;
@@ -56,5 +83,5 @@
     width: 50px;
     left: 50px;
     top: 100px; 
-    z-index: 3
+    z-index: 4
 }
