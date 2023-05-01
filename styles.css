@@ -45,9 +45,6 @@
     left: 450px;
     background-color: green;
     background-image: linear-gradient(to right, green , rgba(24, 218, 24, 0.557));
-
-    /* border-left: 2px solid black; */
-    /* border-right: 2px solid black; */
     z-index: 3;
 
     animation-name: move_pipe;
@@ -60,11 +57,9 @@
     position: absolute;
     width: 60px;
     height: 150px;
-    top: 200px;
+    top: 125px;
     left: 450px;
     background-color: lightskyblue;
-
-
     z-index: 3;
 
     animation-name: move_pipe;
@@ -84,4 +79,25 @@
     left: 50px;
     top: 100px; 
     z-index: 4
+
+}
+
+.text {
+    overflow: hidden;
+    position: absolute;
+    z-index: 4;
+    top:20px;
+    left:20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  
+
+img {
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
