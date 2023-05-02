@@ -1,12 +1,11 @@
 #container{
     position: absolute;
-    width: 500px;
+    width: 550px;
     height: 400px;
     left: 200px;
     top: 100px; 
     background-color: lightskyblue;  
     border: 1px solid black;
-
     overflow: hidden; 
     z-index: 1; 
 
@@ -14,7 +13,7 @@
 
 #grass{
     position: absolute;
-    width: 500px;
+    width: 100%;
     height: 5px;
     top: 375px;
     left: 0px;
@@ -27,7 +26,7 @@
 
 #ground{
     position: absolute;
-    width: 500px;
+    width: 100%;
     height: 20px;
     top: 380px;
     left: 0px;
@@ -37,12 +36,12 @@
 
 }
 
-#pipe{
+#pipe_top{
     position: absolute;
     width: 50px;
-    height: 400px;
+    height: 125px;
     top: 0px;
-    left: 450px;
+    left: 500px;
     background-color: green;
     background-image: linear-gradient(to right, green , rgba(24, 218, 24, 0.557));
     z-index: 3;
@@ -53,13 +52,14 @@
     animation-iteration-count: infinite;
 }
 
-#hole{
+#pipe_bottom{
     position: absolute;
-    width: 60px;
-    height: 150px;
-    top: 125px;
-    left: 450px;
-    background-color: lightskyblue;
+    width: 50px;
+    height: 275px;
+    top: 275px;
+    left: 500px;
+    background-color: green;
+    background-image: linear-gradient(to right, green , rgba(24, 218, 24, 0.557));
     z-index: 3;
 
     animation-name: move_pipe;
@@ -67,6 +67,7 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
+
 
 @keyframes move_pipe {
     0%   {left:450px;}
@@ -78,7 +79,7 @@
     width: 50px;
     left: 50px;
     top: 100px; 
-    z-index: 4
+    z-index: 5
 
 }
 
@@ -88,7 +89,7 @@
     z-index: 4;
     top:20px;
     left:20px;
-    color: white;
+    color: yellow;
     font-family: Arial, Helvetica, sans-serif;
 
   }
@@ -101,3 +102,51 @@ img {
     -webkit-user-select: none;
     user-select: none;
 }
+
+.cloud.one{
+    transform: scale(1,1);
+    left: 200px;
+    top: 50px;
+}
+
+
+.cloud.two{
+    transform: scale(0.5,0.5);
+    left: 300px;
+    top: 150px;
+}
+
+
+.cloud {
+    width: 100px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: inset 0px -10px 10px -10px  #888888;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .cloud:before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-color: #fff; 
+    border-radius: 50%;
+    top: -10px;
+    left: 15px;
+  }
+
+  .cloud:after {
+    position: absolute;
+    content: "";
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: -20px;
+    left: 40px;
+  }
+
+ 
