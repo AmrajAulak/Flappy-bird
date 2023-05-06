@@ -68,6 +68,32 @@
     animation-iteration-count: infinite;
 }
 
+#pipe_bottom::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 60px;
+    height: 20px;
+    background-color: green;
+    background-image: linear-gradient(to right, green , rgba(24, 218, 24, 0.557));
+    transform: translate(-50%, 100%);  
+
+}
+
+#pipe_top::before {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    width: 60px;
+    height: 20px;
+    background-color: green;
+    background-image: linear-gradient(to right, green , rgba(24, 218, 24, 0.557));
+    transform: translateX(-50%);
+}
+
+
 
 @keyframes move_pipe {
     0%   {left:450px;}
