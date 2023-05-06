@@ -8,9 +8,6 @@ function updateScore(){
 }
 
 function changeHeights(){
-    // const hole = document.getElementById("hole");
-    // let y = Math.floor(Math.random() * 225);
-    // hole.style.top = y + "px";
     const pipe_upper = document.getElementById("pipe_top");
     const pipe_bottom = document.getElementById("pipe_bottom");
     const gap_size = 150;

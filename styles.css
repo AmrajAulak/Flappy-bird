@@ -36,39 +36,34 @@
 
 }
 
-#pipe_top{
+.pipe{
+    background-color: green;
+    background-image: linear-gradient(to right, green , rgba(24, 218, 24, 0.557));
+    z-index: 3;
+
+    animation-name: move_pipe;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.pipe.top{
     position: absolute;
     width: 50px;
     height: 125px;
     top: 0px;
     left: 500px;
-    background-color: green;
-    background-image: linear-gradient(to right, green , rgba(24, 218, 24, 0.557));
-    z-index: 3;
-
-    animation-name: move_pipe;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 }
 
-#pipe_bottom{
+.pipe.bottom{
     position: absolute;
     width: 50px;
     height: 275px;
     top: 275px;
     left: 500px;
-    background-color: green;
-    background-image: linear-gradient(to right, green , rgba(24, 218, 24, 0.557));
-    z-index: 3;
-
-    animation-name: move_pipe;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 }
 
-#pipe_bottom::before {
+.pipe.bottom::before {
     content: "";
     position: absolute;
     bottom: 100%;
@@ -81,7 +76,7 @@
 
 }
 
-#pipe_top::before {
+.pipe.top::before {
     content: "";
     position: absolute;
     bottom: 0%;
